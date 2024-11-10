@@ -1,5 +1,5 @@
 import { getData } from "@/actions/todoAction";
-import Todos from "@/components/todos";
+import Todos from "@/app/todo/_components/todos";
 
 export default async function Home() {
   const data = await getData();
