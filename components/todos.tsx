@@ -12,7 +12,7 @@ interface Props {
 const Todos: FC<Props> = ({ todos }) => {
   // State to manage the list of todo items
   const [todoItems, setTodoItems] = useState<todoType[]>(todos);
-
+  
   // Function to create a new todo item
   const createTodo = (text: string) => {
     const id = (todoItems.at(-1)?.id || 0) + 1;
@@ -21,7 +21,7 @@ const Todos: FC<Props> = ({ todos }) => {
   };
 
   // Function to change the text of a todo item
-  const changeTodoText = (id: number, text: string) => {
+  const changeTodo = (id: number, text: string) => {
     setTodoItems((prev) =>
       prev.map((todo) => (todo.id === id ? { ...todo, text } : todo))
     );
@@ -52,7 +52,7 @@ const Todos: FC<Props> = ({ todos }) => {
           <Todo
             key={todo.id}
             todo={todo}
-            changeTodoText={changeTodoText}
+            changeTodoText={changeTodo}
             toggleIsTodoDone={toggleIsTodoDone}
             deleteTodoItem={deleteTodoItem}
           />

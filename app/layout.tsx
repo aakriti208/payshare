@@ -30,8 +30,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div>
-        <Link href={"/about"}>
-        About
+        <Link href={"/todo"}>
+        To-do
         </Link>
           
         </div>

@@ -14,7 +14,12 @@ export const addTodo = async (id: number, text: string) => {
     id: id,
     text: text,
   });
+  
+  revalidatePath("/");
 };
+ 
+
+
 
 export const deleteTodo = async (id: number) => {
   await db.delete(todo).where(eq(todo.id, id));
@@ -43,3 +48,4 @@ export const editTodo = async (id: number, text: string) => {
 
   revalidatePath("/");
 };
+
