@@ -1,9 +1,12 @@
-import { Button } from "@/components/ui/button";
+import PayShareFeatures from "./_components/features";
+import { HeroSection } from "./_components/hero-section";
+import { NavBar } from "./navbar";
 
 export default function Home() {
   return (
-   <div>
-    <Button>Click me</Button>
-   </div>
+    <div>
+      <HeroSection />
+      <PayShareFeatures />
+    </div>
   );
 }
