@@ -5,6 +5,7 @@ import { NavBar } from "./navbar";
 export default function Home() {
   return (
     <div>
+      <NavBar />
       <HeroSection />
       <PayShareFeatures />
     </div>

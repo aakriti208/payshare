@@ -1,5 +1,3 @@
-import Image from "next/image"
-
 export const NavBar = () => {
   return (
     <nav className="bg-slate-700 drop-shadow sticky top-0 z-50">
